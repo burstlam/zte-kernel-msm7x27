@@ -491,14 +491,14 @@ static void synaptics_ts_work_func(struct work_struct *work)
 			if((16==gesture)||(flick_x)||(flick_y))
 			{
 				if ((flick_x >0 )&& (abs(flick_x) > abs(flick_y))) 
-				direction = 1;//�һ�
+				direction = 1;//ÓÒ»¬
 				else if((flick_x <0 )&& (abs(flick_x) > abs(flick_y)))  
-				direction = 2;//��
+				direction = 2;//×ó»¬
 				else if ((flick_y >0 )&& (abs(flick_x) < abs(flick_y))) 
-				direction = 3;//�ϻ�
+				direction = 3;//ÉÏ»¬
 	
 				else if ((flick_y <0 )&& (abs(flick_x) < abs(flick_y))) 
-				direction = 4;//�»�
+				direction = 4;//ÏÂ»¬
 
 			}
 			/*fick_x>0,means move apart, flick_y<0,means close together, the value means velocity*/
